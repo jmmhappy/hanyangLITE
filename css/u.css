@@ -1,0 +1,100 @@
+#remote-control {
+    line-height: 180%;
+    position: fixed;
+    top: 50px;
+    border-bottom: 1px solid #aaa;
+    background-color: #ffffff;
+    z-index: 99;
+    height: auto;
+    padding: 10px;
+    user-select: none;
+}
+
+.mainboard {
+    margin-top: 20px;
+}
+
+.fixed-bar {
+    z-index: 100;
+    background: #1d2475;
+    /* Hanyang blue: https://www.hanyang.ac.kr/web/www/colors-fonts */
+}
+
+.cafeteria hr {
+    display: none;
+}
+
+.cafeteria .buttonTitle {
+    position: sticky;
+    top: 50px;
+    color: #131313;
+    background: #fff;
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    border-top: 1px solid #a1a1a1;
+    border-bottom: 1px solid #b1b1b1;
+    cursor: default;
+}
+
+.cafeteria .subinfo + section {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    align-content: space-around;
+    justify-content: left;
+    line-height: 0;
+}
+
+.cafeteria .subinfo + section .aMenu {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    height: auto;
+    margin: 1%;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid #a1a1a1;
+    border-radius: 5px;
+}
+
+.cafeteria .subinfo + section .aMenu > a {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.cafeteria .subinfo + section .aMenu .food-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.cafeteria .subinfo + section .aMenu .food-desc {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.cafeteria .subinfo + section .aMenu .food-desc .price {
+    display: block;
+    margin: 10px 0 0 0;
+    font-size: 13px;
+}
+
+.portal-noti-cell {
+    font-size: 15px;
+}

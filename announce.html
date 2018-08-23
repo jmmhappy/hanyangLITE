@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>공지사항</title>
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <section class="fixed-bar"></section>
+    <section class="mainboard">
+      <section id="portalann">
+        <hr>
+          <p class="button-title">포털 공지 사항</p>
+          <a href="https://portal.hanyang.ac.kr/sso/lgin.do" target="_blank" class="visit">방문하기</a><hr>
+        <ul></ul>
+      </section>
+      <hr>
+      <section id="majorann">
+        <p class="button-title">학과 공지 사항</p>
+        <aside><input id="direct-visit-m" class="visit" type="button" name="" value="방문하기"></aside><hr>
+      </section>
+      <section>
+        <p class="button-title">에브리타임</p>
+        <a href="https://everytime.kr/" target="_blank" class="visit">방문하기</a><hr>
+      </section>
+      <!-- 학과 홈페이지를 위해서: 학과 선택 가능했으면 좋겠어. storage -->
+      <section class="settings">
+        <h3>학과 홈페이지 선택</h3>
+        <span> 학과를 선택해 주세요.</span>
+        <select id="majorpage"></select>
+
+        <h3>공지 알림 필터</h3>
+        <span>공지 중에서 알림 받고 싶은 키워드를 남겨주세요.<br></span>
+        <span>(키워드 입력 후 엔터)</span>
+        <input id="not-keyword" type="text" name="notKeyword" value="">
+
+        <h3>알림 수신 여부</h3>
+        <span>알림 수신 여부를 확인해 주세요.</span>
+        <input type="radio" name="noti">수신 받기
+        <input type="radio" name="noti">수신 안하기
+      </section>
+    </section>
+    <section id="assert-change" class="hidden expandUp">
+      <img src="./image/assertChange.png" width="16" alt="확인">
+      <span>변경사항이 저장되었습니다.</span>
+    </section>
+    <footer>
+      Icon made by
+      <a href="https://www.flaticon.com/packs/essential-set-2">Smashicons, Freepik</a>
+      from www.flaticon.com
+      <br>
+      Information added from
+      <a href="https://www.hanyang.ac.kr/web/www/-248">Hanyang University</a>
+    </footer>
+    <script src="script/fixedbar.js"></script>
+    <script src="script/forann.js"></script>
+  </body>
+</html>

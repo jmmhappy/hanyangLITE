@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "version": "1.0.1",
+  "name": "HANYANG LITE",
+  "description": "한양대 간편 정보",
+  "permissions": [
+    "tabs",
+    "contextMenus",
+    "notifications",
+    "storage",
+    "*://*.hanyang.ac.kr/*"
+  ],
+  "sidebar_action": {
+    "default_page": "index.html",
+    "default_title": "HANYANG LITE",
+    "default_icon": {
+      "16": "image/icon.png"
+    }
+  },
+  "icons": {
+    "512": "image/icon_big.png"
+  },
+  "background": {
+    "scripts": ["script/moment.js", "script/moment-timezone.js", "script/background.js"]
+  },
+  "content_scripts": [{
+    "css": ["script/content.css"],
+    "matches": ["*://portal.hanyang.ac.kr/openPop.*"]
+  },{
+    "js": ["script/copyText.js", "script/moment.js"],
+    "matches": ["*://portal.hanyang.ac.kr/*"]
+  }
+  ]
+}

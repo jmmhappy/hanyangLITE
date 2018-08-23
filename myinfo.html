@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>information</title>
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <section class="fixed-bar"></section>
+    <section class="mainboard">
+      <!-- 졸업 사정, 교과목 조회, 학점 계산기, (시간표 이미지 다운로드) -->
+      <section id="grad">
+        <hr><p class="button-title">졸업 사정 조회</p><hr><br>
+        <section class="date hidden">최종 갱신일: <span id="updateGdate"></span></section>
+      </section>
+      <section id="curri">
+        <hr><p class="button-title">교과목 조회</p><hr><br>
+        <section id="filter" class="subinfo-calc"></section>
+        <section class="date hidden">최종 갱신일: <span id="updateCdate"></span></section>
+      </section>
+      <section id="calc">
+        <hr><p class="button-title">학점 계산기</p><hr><br>
+        <input type="button" id="score" value="0.0">
+        <section id="putScore" class="subinfo-calc"></section>
+      </section>
+      <section id="popUp" class="fadeIn hidden">
+        <span>학점과 성적을 모두 입력해 주세요.<br></span>
+        <input id="closePopUp" type="button" name="" value="확인">
+      </section>
+    </section>
+    </section>
+
+    <footer>
+      Icon made by
+      <a href="https://www.flaticon.com/packs/essential-set-2">Smashicons, Freepik</a>
+      from www.flaticon.com
+      <br>
+      Information added from
+      <a href="https://www.hanyang.ac.kr/web/www/-248">Hanyang University</a>
+    </footer>
+    <script src="script/fixedbar.js"></script>
+    <script src="script/forinfo.js"></script>
+  </body>
+</html>
